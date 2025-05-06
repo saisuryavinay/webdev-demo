@@ -3,146 +3,261 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Financial Management Guide</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Sri Navodaya High School (E.M.)</title>
+    <link rel="icon" type="image/png" href="C:\Users\D.Sai Surya Vinay\Downloads\WhatsApp Image 2024-09-08 at 09.33.36_dedd1c3e.jpg">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #1e90ff;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        header img {
+            width: 150px;
+            margin-bottom: 10px;
+            animation: fadeIn 1.5s ease-in-out;
+        }
+
+        header h1 {
+            display: inline-block;
+            overflow: hidden;
+            white-space: nowrap;
+            border-right: 3px solid white;
+            animation: typing 3s steps(30, end), blink 0.75s step-end infinite;
+        }
+
+        header p {
+            opacity: 0;
+            animation: fadeIn 1s ease-in-out forwards;
+            animation-delay: 3s;
+        }
+
+        nav {
+            background-color: #333;
+            overflow: hidden;
+        }
+
+        nav a {
+            float: left;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+            font-size: 17px;
+            transition: background-color 0.3s ease;
+        }
+
+        nav a:hover {
+            background-color: #ddd;
+            color: black;
+            transform: scale(1.05);
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+        }
+
+        section {
+            margin-bottom: 40px;
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            opacity: 0;
+            animation: fadeIn 1s ease-in-out forwards;
+        }
+
+        section h2 {
+            color: #1e90ff;
+            margin-bottom: 15px;
+            text-align: center;
+            transform: translateX(-20px);
+            opacity: 0;
+            animation: slideIn 0.8s ease forwards;
+        }
+
+        section p {
+            opacity: 0;
+            animation: fadeIn 1s ease-in-out forwards;
+            animation-delay: 0.5s;
+            text-align: center;
+        }
+
+        section img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+            border-radius: 5px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        section img:hover {
+            transform: scale(1.05);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .staff-grid, .cultural-grid {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            animation: fadeIn 1s ease-in-out;
+        }
+
+        footer p {
+            animation: bounce 1s ease-in-out;
+        }
+
+        /* Animation Keyframes */
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+
+        @keyframes slideIn {
+            0% {
+                opacity: 0;
+                transform: translateX(-20px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        @keyframes typing {
+            from {
+                width: 0;
+            }
+            to {
+                width: 100%;
+            }
+        }
+
+        @keyframes blink {
+            50% {
+                border-color: transparent;
+            }
+        }
+
+        @keyframes bounce {
+            0%, 20%, 50%, 80%, 100% {
+                transform: translateY(0);
+            }
+            40% {
+                transform: translateY(-10px);
+            }
+            60% {
+                transform: translateY(-5px);
+            }
+        }
+
+        #home {
+            animation-delay: 0.2s;
+        }
+
+        #about {
+            animation-delay: 0.4s;
+        }
+
+        #gallery {
+            animation-delay: 0.6s;
+        }
+
+        #achievements {
+            animation-delay: 0.8s;
+        }
+
+        @media (max-width: 768px) {
+            nav a {
+                float: none;
+                display: block;
+                text-align: left;
+            }
+
+            .staff-grid, .cultural-grid {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
 </head>
 <body>
-    <div id="loader" class="loader"></div>
     <header>
-        <nav>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#team">Team</a></li>
-                <li><a href="#stats">Key Stats</a></li>
-                <li><a href="#income">Income Management</a></li>
-                <li><a href="#portfolio">Portfolio</a></li>
-                <li><a href="#emergency">Emergency Fund</a></li>
-                <li><a href="#insurance">Insurance</a></li>
-                <li><a href="#investments">Investments</a></li>
-                <li><a href="#hazards">Hazards</a></li>
-                <li><a href="#principles">Principles</a></li>
-            </ul>
-        </nav>
+        <img src="C:\Users\D.Sai Surya Vinay\Downloads\WhatsApp Image 2024-09-08 at 09.33.36_dedd1c3e.jpg" alt="Sri Navodaya High School Logo">
+        <h1>Sri Navodaya High School (E.M.)</h1>
+        <p>Nursery to 10th Class | Contact: 9949859194, 9490359194</p>
     </header>
 
-    <section id="home" class="hero">
-        <div class="hero-content">
-            <h1>Financial Management</h1>
-            <p>Learn essential financial principles to build a secure future through informed decisions.</p>
-        </div>
-    </section>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#achievements">Achievements</a>
+    </nav>
 
-    <section id="team" class="section">
-        <h2>Our Team</h2>
-        <div class="team-grid">
-            <div class="team-item">T Kumar Swamy - 23P31A4267</div>
-            <div class="team-item">Ch V M Kiran - 23P31A4211</div>
-            <div class="team-item">D S S Vinay - 23P31A4218</div>
-            <div class="team-item">R S R Chakradhar - 23P31A4264</div>
-            <div class="team-item">J Yeswanth - 23P31A4230</div>
-            <div class="team-item">N K Raja - 23P31A4252</div>
-            <div class="team-item">M Sai Charan - 23P31A4245</div>
-            <div class="team-item">B Koushik - 23P31A4206</div>
-        </div>
-    </section>
+    <div class="container">
+        <section id="home">
+            <h2>Welcome to Sri Navodaya High School</h2>
+            <img src="C:\Users\D.Sai Surya Vinay\Downloads\WhatsApp Image 2024-09-08 at 09.31.41_5c3014b3.jpg" alt="School Building">
+            <p>We are a premier educational institution offering quality education from Nursery to 10th Class.</p>
+        </section>
 
-    <section id="stats" class="section">
-        <h2>Key Financial Stats About India</h2>
-        <div class="stats-grid">
-            <div class="stat"><span>70%</span> Medical Bill Away From Bankruptcy</div>
-            <div class="stat"><span>3%</span> Invest in Stocks</div>
-            <div class="stat"><span>80%</span> Make Less Than ₹100 a Day</div>
-            <div class="stat"><span>90%</span> Work in Unorganized Sectors</div>
-        </div>
-        <p><strong>Additional Fact:</strong> ₹73K crores are unclaimed FDs in India.</p>
-    </section>
-
-    <section id="income" class="section">
-        <h2>Income Management</h2>
-        <p>The 50/30/20 rule helps manage income effectively.</p>
-        <div class="income-grid">
-            <div class="income-item"><span>50%</span> Needs: Essential expenses like rent, food, and transportation.</div>
-            <div class="income-item"><span>30%</span> Wants: Non-essential spending on leisure and entertainment.</div>
-            <div class="income-item"><span>20%</span> Savings: Investments, debt repayment, and emergency funds.</div>
-        </div>
-    </section>
-
-    <section id="portfolio" class="section">
-        <h2>Building a Financial Portfolio</h2>
-        <p>A financial portfolio is key to financial security.</p>
-        <div class="portfolio-grid">
-            <div class="portfolio-item">Savings: Start saving early and consistently to build a financial safety net for future goals and unexpected expenses.</div>
-            <div class="portfolio-item">Investments: Invest smartly in stocks, mutual funds, or real estate to grow wealth and create passive income over time.</div>
-            <div class="portfolio-item">Insurance: Get insurance to protect against uncertainties like health emergencies and secure your family's financial future.</div>
-            <div class="portfolio-item">Emergency Fund: Keep 3-6 months of living expenses in an emergency fund to handle unforeseen situations without financial strain.</div>
-        </div>
-        <p><strong>Stats:</strong> Over 50% of Indian households rely on informal savings, and less than 20% have health insurance. Only 12% of the working population saves for retirement.</p>
-    </section>
-
-    <section id="emergency" class="section">
-        <h2>Emergency Fund</h2>
-        <p>Invest your emergency fund in safe instruments like Fixed Deposits (FDs) offering 7-9% returns.</p>
-        <ol>
-            <li>Invest in FDs: Choose safe instruments.</li>
-            <li>Account for Inflation: Consider 5-7% inflation rates.</li>
-            <li>Earn Returns: Ensure your fund grows over time.</li>
-        </ol>
-        <p><strong>Note:</strong> ₹73,000 crore FDs are unclaimed, highlighting the need to track investments.</p>
-    </section>
-
-    <section id="insurance" class="section">
-        <h2>Insurance: Term and Health Coverage</h2>
-        <div class="insurance-grid">
-            <div class="insurance-item">
-                <h3>Term Insurance</h3>
-                <p>Provides financial security for your family in case of your passing.</p>
+        <section id="about">
+            <h2>Our Staff</h2>
+            <div class="staff-grid">
+                <img src="C:\Users\D.Sai Surya Vinay\Downloads\WhatsApp Image 2025-05-06 at 19.21.07_13fd8b3a.jpg" alt="School Staff">
             </div>
-            <div class="insurance-item">
-                <h3>Health Insurance</h3>
-                <p>Covers hospitalization and treatment costs, protecting you from medical emergencies.</p>
+            <p>Meet our dedicated team of educators committed to nurturing young minds.</p>
+        </section>
+
+        <section id="gallery">
+            <h2>Cultural Programs</h2>
+            <div class="cultural-grid">
+                <img src="C:\Users\D.Sai Surya Vinay\Downloads\WhatsApp Image 2025-05-06 at 19.22.41_33ce4982.jpg" alt="Cultural Program">
             </div>
-        </div>
-        <p><strong>Stat:</strong> Less than 20% of India's population has health insurance.</p>
-    </section>
+            <p>Our students actively participate in cultural events, celebrating unity and diversity.</p>
+        </section>
 
-    <section id="investments" class="section">
-        <h2>Investments</h2>
-        <p>Choose investments based on your risk appetite.</p>
-        <div class="investment-grid">
-            <div class="investment-item">Equity: High-risk investments with potential for high returns.</div>
-            <div class="investment-item">Real Estate: Invest in residential or commercial properties.</div>
-            <div class="investment-item">Gold: Safe haven offering protection during economic instability.</div>
-        </div>
-        <p><strong>Stat:</strong> Only 3% of Indians invest in stock markets.</p>
-    </section>
-
-    <section id="hazards" class="section">
-        <h2>Financial Hazards to Avoid</h2>
-        <div class="hazards-grid">
-            <div class="hazard-item">High EMI Burdens: Strain your budget.</div>
-            <div class="hazard-item">Credit Card Debt: High interest charges.</div>
-            <div class="hazard-item">Instant Loan Apps: Predatory lending practices.</div>
-            <div class="hazard-item">Online Betting: Risk of loss and addiction.</div>
-        </div>
-    </section>
-
-    <section id="principles" class="section">
-        <h2>Warren Buffett's Five Great Principles</h2>
-        <ol>
-            <li>If you buy things you don't need, you will soon sell things you need.</li>
-            <li>Price is what you pay, and value is what you get.</li>
-            <li>Never put all your eggs in one basket.</li>
-            <li>Save first and spend second.</li>
-            <li>Pay taxes on time for peace of mind.</li>
-        </ol>
-    </section>
+        <section id="achievements">
+            <h2>Academic Achievements</h2>
+            <img src="C:\Users\D.Sai Surya Vinay\OneDrive\Desktop\personal-protofolio\images\marks-placeholder.jpg" alt="10th Class Marks">
+            <p>We are proud to announce our 2025 SSC Results with 100% pass rate and Mandal 1st ranks!</p>
+        </section>
+    </div>
 
     <footer>
-        <p>Thank you for exploring our Financial Management Guide. We wish you success in building a secure financial future!</p>
+        <p>© 2025 Sri Navodaya High School (E.M.). All Rights Reserved.</p>
     </footer>
-
-    <button id="back-to-top" title="Back to Top">↑</button>
-
-    <script src="script.js"></script>
 </body>
 </html>
